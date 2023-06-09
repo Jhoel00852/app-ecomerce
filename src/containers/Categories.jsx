@@ -1,5 +1,5 @@
 import '../styles/containers/categories.css'
-import { getProductsXCategoryThunk } from '../store/slice/products.slice'
+import { getProductsXCategoryThunk } from '../store/slice/product.slice'
 import { useDispatch } from 'react-redux'
 const Categories = ({data}) => {
   const dispatch = useDispatch()

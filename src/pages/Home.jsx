@@ -5,7 +5,7 @@ import axios from "axios";
 import {
   getProductsThunk,
   getProductsXNameThunk,
-} from "../store/slice/products.slice";
+} from "../store/slice/product.slice";
 import Aside from "../components/Aside";
 import ListProducts from "../components/ListProducts";
 import Categories from "../containers/Categories";

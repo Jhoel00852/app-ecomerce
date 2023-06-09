@@ -1,7 +1,7 @@
 import Pagination from "../containers/Pagination";
 import Products from "../containers/Products";
-import "../styles/listProducts.css";
-import { getProductsXNameThunk} from "../store/slice/products.slice";
+import "../styles/listProduct.css";
+import { getProductsXNameThunk} from "../store/slice/product.slice";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 const ListProducts = ({ dataProduct }) => {
@@ -22,16 +22,16 @@ const ListProducts = ({ dataProduct }) => {
   return (
     <div className="container-products">
       <div className="container-header-product">
-        {/* <div className="container-select" >
-          <label htmlFor="">Filtrar por:</label>
-          <select className="input-select">
-            <option value="0">-Seleccione-</option>
-            <option value="1">Precio</option>
-            <option value="2">Nombre</option>
-          </select>
-        </div> */}
+        <div className="container-select" >
+          {/* <label htmlFor="">Ordenar Por:</label> */}
+          {/* <select className="input-select">
+            <option value="0">-Seleccionar-</option>
+            <option value="0">Price</option>
+            <option value="0">Name</option>
+          </select> */}
+        </div>
         {/* <div className="container-input">
-          <input type="text" onKeyDown={handleKeyEnter} onChange={(e) => setStr(e.target.value) } className="input-search" placeholder="Ingrese texto" />
+          <input type="text" onKeyDown={handleKeyEnter} onChange={(e) => setStr(e.target.value) } className="input-search" placeholder="Presione Enter" />
         </div> */}
       </div>
      <Pagination page={page} maxPage={maxPage} setPage={setPage} /> 
